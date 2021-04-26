@@ -1,15 +1,5 @@
-<!--END-->
-<!--END--><!DOCTYPE html><!--[if IE 7]>
-<html class="ie7" lang="ru">
-<![endif]-->
-<!--[if IE 8]>
-<html class="ie8" lang="ru">
-<![endif]-->
-<!--[if IE 9]>
-<html class="ie9" lang="ru">
-<![endif]-->
-<!--[if gt IE 9]><!-->
-<html lang="ru" xmlns:th="http://www.thymeleaf.org"> <!--<![endif]-->
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Тут название страницы написать</title>
     <meta name="description" content="Описание страницы">
@@ -28,7 +18,7 @@
 </head>
 <body class="Site">
 <header class="Header"
-        th:replace="~{fragments/common_header_fragment :: head}"></header>
+        th:replace="~{fragments/common_header_fragment :: head(status='authorized')}"></header>
 <div class="Middle">
     <div class="wrap">
         <main class="Middle-main">
